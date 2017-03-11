@@ -1,0 +1,40 @@
+.site-header nav a {
+  display: block;
+  db (tab)
+
+  text-decoration: none;
+  (td)
+
+  margin-bottom:  10px;
+  (mb)
+
+  margin-right: 10px;
+  (mr)
+
+  padding: 10px;
+  (p)
+}
+
+.test {
+  p10-20
+  padding: 10px 20px;
+
+  p10-20-12-13
+  padding: 10px 20px 12px 13px;
+
+  width: 85%;
+  w
+
+  float: left;
+  fl
+
+  text-align: center;
+  tc or tac
+
+width: 40%; (cltr+up/down = move percent)
+
+width: 11.1%; (alt+up/down = move % .1)
+
+width: 20; (ctrl+alt up/down = move +1)
+  }
+
