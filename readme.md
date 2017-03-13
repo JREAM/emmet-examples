@@ -31,7 +31,9 @@ element > nested-element.classname * how-many-nested
 
 ```
 ul>li*5
+```
 
+```html
 <ul>
   <li></li>
   <li></li>
@@ -44,13 +46,19 @@ ul>li*5
 ### Add Classes and IDs
 ```
 ul>li.item
+```
 
+```html
 <ul>
   <li class="item"></li>
 </ul>
+```
 
+```
 ul#mylist>li
+```
 
+```html
 <ul id="mylist">
   <li></li>
 </ul>
@@ -60,6 +68,9 @@ ul#mylist>li
 ```
 ; The $ represents an Integer
 ul>li.item-$*10>a
+```
+
+```html
 <ul>
   <li class="item-1"><a href=""></a></li>
   <li class="item-2"><a href=""></a></li>
@@ -79,6 +90,9 @@ ul>li.item-$*10>a
 ; The $$$ represents an integer, but will be used to pad with 0's if it is below 100
 
 ul>li.item-$$$*10>a
+```
+
+```html
 <ul>
   <li class="item-001"><a href=""></a></li>
   <li class="item-002"><a href=""></a></li>
@@ -97,6 +111,9 @@ ul>li.item-$$$*10>a
 Use the Plus Syntax +
 ```
 div.container>div.sidebar+div.content
+```
+
+```html
 <div class="container">
   <div class="sidebar"></div>
   <div class="content"></div>
@@ -109,13 +126,15 @@ div.nav>ul>li*3+div.below-nav>h1.page-title
 
 ; Since the above nests ul>li and +div, it places it in the LI,
 ; So we can use Groups!
+```
 
+```html
 <div class="nav">
   <ul>
     <li></li>
     <li></li>
     <li></li>
-    <div class="below-nav">  < -- Sometimes we don't want that.
+    <div class="below-nav">  &lt;-- Sometimes we don't want that.
       <h1 class="page-title"></h1>
     </div>
   </ul>
@@ -124,15 +143,16 @@ div.nav>ul>li*3+div.below-nav>h1.page-title
 ```
 
 ### Place side by Side Items and Use Groups to Nest
-With Groups you wrap items in parentheses. The above code:
+With Groups you wrap items in parentheses. The above code can easily be fixed with grouping:
 ```
 div.nav>ul>li*3+div.below-nav>h1.page-title
-```
 
-Can easily be solved with groups, look:
+; To Groups:
 
-```
 (div.nav>ul>li*3)+(div.below-nav>h1.page-title)
+```
+
+```html
 <div class="nav">
   <ul>
     <li></li>
@@ -149,7 +169,9 @@ Can easily be solved with groups, look:
 Example of making a basic html page
 ```
 (html)>(head>(title)+(meta)+(link))>body
+```
 
+```html
 <html></html>
 <head>
   <title></title>
@@ -192,7 +214,8 @@ give you an idea of what we are making.
 ```
 
 The code Above would read and product like below:
-```
+
+```html
 (header>nav>ul>li.items*2>a)+(div.container>(div.sidebar+div.content))+(footer>p.muted)
 <header>
   <nav>
@@ -228,10 +251,14 @@ Thu
 Fri
 Sat
 Sun
+```
 
-; In the box I entered:
+In the box I entered:
+```
 li.day-$$>span
+```
 
+```html
 <li class="dow-1">Sun</li>
 <li class="dow-2">Mon</li>
 <li class="dow-3">Wed</li>
