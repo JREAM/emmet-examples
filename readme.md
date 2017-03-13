@@ -109,6 +109,7 @@ ul>li.item-$$$*10>a
 
 ### Place Items Side by Side
 Use the Plus Syntax +
+
 ```
 div.container>div.sidebar+div.content
 ```
@@ -121,6 +122,7 @@ div.container>div.sidebar+div.content
 ```
 
 Sometimes the Nesting doesn't go how we want, see below.
+
 ```
 div.nav>ul>li*3+div.below-nav>h1.page-title
 
@@ -139,11 +141,11 @@ div.nav>ul>li*3+div.below-nav>h1.page-title
     </div>
   </ul>
 </div>
-
 ```
 
 ### Place side by Side Items and Use Groups to Nest
 With Groups you wrap items in parentheses. The above code can easily be fixed with grouping:
+
 ```
 div.nav>ul>li*3+div.below-nav>h1.page-title
 
@@ -163,7 +165,6 @@ div.nav>ul>li*3+div.below-nav>h1.page-title
 <div class="below-nav">
   <h1 class="page-title"></h1>
 </div>
-
 ```
 
 Example of making a basic html page
@@ -180,6 +181,7 @@ Example of making a basic html page
 </head>
 <body>
 </body>
+```
 
 ### Create a Page Structure With Groups, Nesting and SideBySide
 
